@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa de Mantenimiento de Celulares</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icono.ico">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+        }
+        .boton-volver {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .boton-volver:hover {
+            background-color: #c1dadb;
+        }
+        .botones-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .boton-redireccion {
+            padding: 10px 20px;
+            background-color: #85a6cc;
+            color: rgb(219, 194, 194);
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        .boton-redireccion:hover {
+            background-color: #1b34c2ad;
+        }
+        .contenido-inicio {
+            display: flex;
+            align-items: center; /* Alinea verticalmente el texto y la imagen */
+            justify-content: center; /* Centra el contenido */
+            margin-top: 20px;
+        }
+        .contenido-inicio img {
+            max-width: 300px; /* Ajusta el tamaño de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-left: 20px; /* Espacio entre el texto y la imagen */
+        }
+        .contenido {
+            display: flex;
+            justify-content: space-between; /* Espacio entre el texto y la imagen */
+            align-items: center; /* Alinea verticalmente el texto y la imagen */
+            margin: 20px; /* Espacio alrededor del contenido */
+        }
+        .contenido img {
+            max-width: 500px; /* Aumenta el tamaño de la imagen en las secciones */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-left: 9px; /* Espacio entre la imagen y el texto */
+            margin-right: 10px; /* Espacio adicional a la derecha */
+        }
+    </style>
+</head>
+<body>
+    <div id="inicio" class="contenedor">
+        <div style="background-image: url('fondo2.jpg'); background-size: cover; background-position: center; height: 50vh; width: 100%;">
+            <h1><b><i>Mantenimiento</i></b></h1>
+            <div class="contenido-inicio">
+                <div>
+                    <p>El mantenimiento es un conjunto de actividades y procedimientos destinados a preservar, reparar o </p>
+                    <p>mejorar el funcionamiento de equipos, maquinaria, infraestructuras o sistemas. Su principal objetivo es </p>
+                    <p> garantizar la operatividad, prolongar la vida útil y prevenir fallos que puedan ocasionar pérdidas  </p>
+                    
+                    <p> económicas o riesgos de seguridad. </p>
+                    <p> El mantenimiento se aplica en diversas áreas, como la industria, la informática, la construcción y la  </p>
+                    <p> mecánica. En el ámbito tecnológico, el mantenimiento de computadoras y celulares es fundamental </p>
+                    <p>para garantizar su rendimiento óptimo, evitar fallas inesperadas y prolongar su vida útil. </p>
+                </div>
+                <img src="mantenimiento.jpg" alt="Mantenimiento" /> <!-- Cambia 'mantenimiento.jpg' por el nombre de tu imagen -->
+            </div>
+            <div class="botones-container">
+                <a href="#" class="boton-redireccion" onclick="mostrarCorrectivo()">Correctivo</a>
+                <a href="#" class="boton-redireccion" onclick="mostrarPreventivo()">Preventivo</a>
+            </div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="Mantenimiento.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </div>
+
+    <div id="correctivo" class="contenedor" style="display: none; position: relative;">
+        <button class="boton-volver" onclick="volverInicio()">Volver al inicio</button>
+        <h2>Mantenimiento Correctivo</h2>
+        <div class="contenido">
+            <div>
+                <p>El mantenimiento correctivo es el conjunto de acciones y procedimientos que se realizan para reparar </p>
+                <p> un equipo, sistema o dispositivo después de que ha presentado una falla o avería. Su objetivo principal </p>
+                <p>  es restaurar el funcionamiento del equipo para que vuelva a operar correctamente. </p>
+                <p>  Este tipo de mantenimiento es reactivo, es decir, se lleva a cabo solo cuando el problema ya ha </p>
+                <p> ocurrido, y puede implicar desde pequeñas reparaciones hasta el reemplazo total de componentes. </p>
+            </div>
+            <img src="correctivo.jpg" alt="Mantenimiento Correctivo" /> <!-- Cambia 'correctivo.jpg' por el nombre de tu imagen -->
+        </div>
+        
+        <h3>¿Cómo se realiza el mantenimiento correctivo?</h3>
+        
+        <p>El proceso de mantenimiento correctivo varía según el tipo de equipo y la naturaleza de la falla, pero</p>
+        <p>generalmente sigue estos pasos:.</p>
+    
+        <h4>1. Diagnóstico del problema</h4>
+        <ul>
+            <li>Se identifica la causa de la falla mediante pruebas y análisis.    </li>
+            <li>En computadoras, se pueden usar herramientas como CrystalDiskInfo para discos duros o software </li>
+            <li>de monitoreo de temperatura.    </li>
+            <li>En celulares, se revisa el hardware y el software para detectar posibles fallos. </li>
+        </ul>
+        <h4>2. Evaluación de soluciones</h4>    
+        <ul>
+            <li>Se determina si la reparación es posible o si es necesario reemplazar componentes. </li>
+            <li>Se informa al cliente sobre el problema y el costo de la reparación. </li>
+        </ul>
+        <h4> 3. Reparación o reemplazo de componentes   </h4>
+        <ul>
+            <li>Si es un problema de hardware, se pueden cambiar piezas dañadas (batería, pantalla, disco duro, </li>
+            <li>teclado, etc.). </li>
+            <li>Si es un problema de software, se puede reinstalar el sistema operativo, eliminar virus o reparar </li> 
+            <li>archivos dañados. </li>
+        </ul>
+        <h4>4. Pruebas de funcionamiento   </h4>
+        <ul>
+            <li>Se verifica que el equipo funcione correctamente después de la reparación. </li>
+            <li>Se realizan pruebas de rendimiento y estabilidad para asegurar que la falla no se repita. </li>
+        </ul>
+        <h4>5. Entrega al cliente </h4>
+        <ul>
+            <li>Se explica al cliente qué se reparó y se dan recomendaciones para evitar futuros problemas. </li>
+            <li>En algunos casos, se ofrece garantía sobre la reparación realizada. </li>
+        </ul>
+        <h3> Ejemplo de mantenimiento correctivo en computadoras y celulares </h3>
+        <ul>
+            <h4>📌 Caso 1: Laptop con pantalla rota </h4>
+            <li>Diagnóstico: Se revisa si solo la pantalla está dañada o si hay otros problemas internos. </li>  
+            <li> Solución: Se reemplaza la pantalla y se prueba el equipo antes de la entrega.   </li>
+            <h4>📌 Caso 2: Celular que no enciende  </h4>
+            <ul>
+                <li> Diagnóstico: Se prueba con otro cargador y batería para determinar la causa del fallo.  </li>
+                <li> Solución: Si la batería está dañada, se reemplaza. Si es un problema de software, se reinstala </li> 
+                <li>el sistema. </li>
+            </ul>
+            <h4>📌 Caso 3: PC con virus y rendimiento lento </h4>
+            <li> Diagnóstico: Se usa un antivirus para detectar malware y se analizan procesos del sistema. </li>
+            <li>Solución: Se eliminan virus, se optimiza el sistema y, si es necesario, se reinstala Windows.</li>
+        </ul>
+    </div>
+
+    <div id="preventivo" class="contenedor" style="display: none; position: relative;">
+        <button class="boton-volver" onclick="volverInicio()">Volver al inicio</button>
+        <h2>Mantenimiento Preventivo</h2>
+        <div class="contenido">
+            <div>
+                <p>El mantenimiento preventivo es un conjunto de acciones programadas que tienen como objetivo evitar </p>
+                <p> fallas o averías en un equipo antes de que ocurran. Se basa en la inspección, limpieza, ajuste y </p>
+                <p> actualización de los componentes de un sistema para prolongar su vida útil y garantizar un </p>
+                <p>funcionamiento óptimo.</p>
+                <p>   En el ámbito de la reparación de computadoras y celulares, el mantenimiento preventivo es </p>
+                <p>  fundamental para evitar problemas como sobrecalentamiento, lentitud, fallos en el sistema operativo o</p>
+                <p> daños en el hardware. </p>
+            </div>
+            <img src="preventivo.jpg" alt="Mantenimiento Preventivo" /> <!-- Cambia 'preventivo.jpg' por el nombre de tu imagen -->
+        </div>
+        
+        <h3> ¿Cómo se realiza el mantenimiento preventivo? </h3>
+        <p> El proceso de mantenimiento preventivo varía según el tipo de equipo, pero sigue estos pasos generales: </p>
+        
+        <h3>1. Inspección inicial  </h3>
+        <ul>
+            <li>Se revisa el estado del equipo, verificando posibles señales de desgaste, acumulación de polvo o </li>
+            <li> fallas en el software.   </li>
+            <li> En computadoras, se analiza el rendimiento del disco duro, la temperatura del procesador y el estado de la memoria RAM.   </li>
+            <li> En celulares, se revisan la batería, el almacenamiento y el estado físico del dispositivo. </li>
+        </ul>
+        <h3>  2. Limpieza del hardware </h3>
+        <ul>
+            <li> Computadoras: Se desmontan y se limpian los ventiladores, disipadores de calor, teclado y puertos.</li>
+            <li>  Celulares: Se limpia el puerto de carga, la ranura de la tarjeta SIM y los botones. </li>
+            <li> Se usa aire comprimido, brochas y productos especiales para evitar daños en los componentes electrónicos. </li>
+        </ul>
+        <h3> 3. Optimización del software  </h3>
+        <ul>
+            <li> Eliminación de archivos temporales y programas innecesarios.  </li>
+            <li>  Actualización del sistema operativo y los controladores. </li>
+            <li>Instalación de programas de seguridad y antivirus.  </li>
+        </ul>
+        <h3> 4. Revisión y ajuste de componentes </h3>
+        <ul>
+            <li> Verificación del correcto funcionamiento del disco duro o SSD en computadoras. </li>
+            <li>Prueba del estado de la batería en laptops y celulares.  </li>
+            <li> Ajuste de conexiones internas y revisión de cables o componentes sueltos. </li>
+        </ul>
+        <h3> 5. Pruebas finales y entrega  </h3>
+        <ul>
+            <li> Se enciende el equipo y se verifican su rendimiento, estabilidad y velocidad. </li>
+            <li> Se recomienda al usuario realizar mantenimientos periódicos y tomar medidas para evitar daños. </li>
+        </ul>
+        <h3>Ejemplo de mantenimiento preventivo en computadoras y celulares  </h3>
+        <h4> 📌 Caso 1: Laptop con ventilador ruidoso y sobrecalentamiento </h4>
+        <ul>
+            <li> Acciones: Se limpia el ventilador, se cambia la pasta térmica del procesador y se optimiza el </li>
+            <li>software para reducir el uso del CPU. </li>
+        </ul>
+        <h4> 📌 Caso 2: Celular con poco espacio de almacenamiento    </h4>
+        <ul>
+            <li> Acciones: Se eliminan archivos innecesarios, se mueve contenido a la nube y se desinstalan   </li>
+            <li>aplicaciones que no se usan. </li>
+        </ul>
+        <h4> 📌 Caso 3: PC lenta por acumulación de archivos basura   </h4>
+        <ul>
+            <li>Acciones: Se usa un programa de limpieza, se desfragmenta el disco duro y se optimiza el arranque  </li>
+            <li>del sistema. </li>
+        </ul>
+    </div>
+
+    <script>
+        function mostrarCorrectivo() {
+            document.getElementById('inicio').style.display = 'none';
+            document.getElementById('correctivo').style.display = 'block';
+            document.getElementById('preventivo').style.display = 'none';
+        }
+
+        function mostrarPreventivo() {
+            document.getElementById('inicio').style.display = 'none';
+            document.getElementById('correctivo').style.display = 'none';
+            document.getElementById('preventivo').style.display = 'block';
+        }
+
+        function volverInicio() {
+            document.getElementById('correctivo').style.display = 'none';
+            document.getElementById('preventivo').style.display = 'none';
+            document.getElementById('inicio').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
